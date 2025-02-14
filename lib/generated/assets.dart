@@ -3,5 +3,9 @@ class Assets {
   Assets._();
 
   static const String imagesBackground = 'assets/images/background.png';
+  static const String imagesIcCookTick = 'assets/images/ic_cook_tick.png';
+  static const String imagesLogo = 'assets/images/logo.png';
+  static const String imagesOnboarding = 'assets/images/onboarding.png';
+  static const String imagesOnboardingLogo = 'assets/images/onboarding_logo.png';
 
 }

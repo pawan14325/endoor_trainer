@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 class PrimaryButton extends StatelessWidget {
   final Widget child;
   final double? width, height;
-  Color? backGroundColor = Colors.red;
+  Color? backGroundColor = AppColors.secondaryColor;
   Color? rippleColor;
   Function onTap;
   // Constructor with proper initialization
@@ -21,18 +21,17 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-
-      borderRadius: BorderRadius.circular(12 ),
+      borderRadius: BorderRadius.circular(30 ),
       onTap: () {
         onTap();
       },
-
       child: Container(
         height: height ,  // Use the height value or the default
         width: width , //Use the width value or the default
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(12),
-          color: AppColors.secondaryColor,
+          borderRadius: BorderRadius.circular(30),
+          color: backGroundColor?? AppColors.secondaryColor,
+          border: Border.all(color: AppColors.secondaryColor)
         ),
         child: Center(
             child: child

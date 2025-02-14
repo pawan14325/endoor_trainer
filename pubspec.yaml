@@ -29,8 +29,9 @@ dependencies:
   permission_handler:
   file_picker:
   image_picker:
-  flutter_svg:
   get_storage:
+  country_code_picker:
+  pin_code_fields:
 
 
 dev_dependencies:

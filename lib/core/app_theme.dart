@@ -35,8 +35,8 @@ class AppThemes {
         headlineLarge: TextStyle(
             fontWeight: FontWeight.w700,
             fontFamily: "Roboto",
-            color: AppColors.primaryColor,
-            fontSize: 24),
+            color: AppColors.whiteColor,
+            fontSize: 34),
         headlineMedium: TextStyle(
             fontWeight: FontWeight.w500,
             fontFamily: "Roboto",
