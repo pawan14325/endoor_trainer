@@ -1,0 +1,63 @@
+name: endo_trainer
+description: "A new Flutter project."
+
+publish_to: 'none'
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.1
+
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  flutter_bloc:
+  json_annotation:
+  dio:
+  flutter_secure_storage:
+  firebase_messaging:
+  firebase_core:
+  firebase_crashlytics:
+  firebase_analytics:
+  flutter_local_notifications:
+  logger:
+  socket_io_client:
+  permission_handler:
+  file_picker:
+  image_picker:
+  flutter_svg:
+  get_storage:
+
+
+dev_dependencies:
+  json_serializable:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+
+flutter:
+
+
+  uses-material-design: true
+  generate: true
+
+  assets:
+    - assets/images/
+
+
+  fonts:
+    - family: Montserrat
+      fonts:
+        - asset: fonts/montserrat/Montserrat-Bold.ttf
+          style: normal
+    - family: Roboto
+      fonts:
+        - asset: fonts/roboto/Roboto-Bold.ttf
+        - asset: fonts/roboto/Roboto-Medium.ttf
+        - asset: fonts/roboto/Roboto-Regular.ttf
