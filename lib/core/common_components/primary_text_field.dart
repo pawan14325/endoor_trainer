@@ -11,6 +11,7 @@ class PrimaryTextField extends StatelessWidget {
    late final int? minLine;
    final double? width,height;
    final BoxBorder? border;
+   final Color? color;
    PrimaryTextField({
      super.key,
      required this.hintText,
@@ -20,6 +21,7 @@ class PrimaryTextField extends StatelessWidget {
      this.width,
      this.height,
      this.border,
+     this.color
    });
 
   @override
@@ -56,7 +58,7 @@ class PrimaryTextField extends StatelessWidget {
               fontSize: 14,
             ),
             border: InputBorder.none,
-            fillColor: AppColors.whiteColor,
+            fillColor: color??AppColors.whiteColor,
           ),
         ),
       ),

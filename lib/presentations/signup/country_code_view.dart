@@ -4,7 +4,7 @@ import 'package:endo_trainer/core/common_components/app_background.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/core/common_components/primary_text_field.dart';
 import 'package:endo_trainer/generated/assets.dart';
-import 'package:endo_trainer/presentations/otp/otp_view.dart';
+import 'package:endo_trainer/presentations/signup/otp_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';

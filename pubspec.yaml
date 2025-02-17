@@ -33,7 +33,7 @@ dependencies:
   country_code_picker:
   pin_code_fields:
   curved_labeled_navigation_bar:
-
+  flutter_page_view_indicator:
 
 dev_dependencies:
   json_serializable:

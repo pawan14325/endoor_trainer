@@ -3,6 +3,7 @@ class Assets {
   Assets._();
 
   static const String imagesBackground = 'assets/images/background.png';
+  static const String imagesHomePageView = 'assets/images/home_page_view.png';
   static const String imagesIcCookTick = 'assets/images/ic_cook_tick.png';
   static const String imagesIcEarningBottomNavBar = 'assets/images/ic_earning_bottomNavBar.png';
   static const String imagesIcHistoryBottomNavBar = 'assets/images/ic_history_bottomNavBar.png';

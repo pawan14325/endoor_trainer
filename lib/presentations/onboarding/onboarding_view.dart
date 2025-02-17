@@ -1,7 +1,7 @@
 import 'package:endo_trainer/core/app_sizes.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/generated/assets.dart';
-import 'package:endo_trainer/presentations/country_code/country_code_view.dart';
+import 'package:endo_trainer/presentations/signup/country_code_view.dart';
 import 'package:endo_trainer/presentations/login/login_view.dart';
 import 'package:flutter/material.dart';
 

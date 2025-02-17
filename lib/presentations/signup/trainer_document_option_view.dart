@@ -1,4 +1,4 @@
-import 'package:endo_trainer/Trainer_passport/trainer_passport_view.dart';
+import 'package:endo_trainer/presentations/signup/trainer_passport_view.dart';
 import 'package:endo_trainer/core/app_sizes.dart';
 import 'package:endo_trainer/core/common_components/app_background.dart';
 import 'package:endo_trainer/generated/assets.dart';

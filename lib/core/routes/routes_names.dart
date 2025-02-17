@@ -38,6 +38,18 @@ class RoutesName {
   //bottom nav bar routes name
   static const String bottomNavBar = 'bottomNavBar_screen';
 
+  //profile routes name
+  static const String profile = 'profile_screen';
+
+  //account routes name
+  static const String account = 'account_screen';
+
+  //bio edit routes name
+  static const String bioEdit = 'bioEdit_screen';
+
+  //support routes name
+  static const String support = 'support_screen';
+
 
 
 
