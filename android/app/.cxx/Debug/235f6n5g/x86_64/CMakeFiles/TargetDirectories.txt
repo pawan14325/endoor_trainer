@@ -1,0 +1,2 @@
+/Users/rowth/Documents/endoor_trainer/android/app/.cxx/Debug/235f6n5g/x86_64/CMakeFiles/edit_cache.dir
+/Users/rowth/Documents/endoor_trainer/android/app/.cxx/Debug/235f6n5g/x86_64/CMakeFiles/rebuild_cache.dir
