@@ -100,7 +100,7 @@ class EndoorphinTrainer extends StatelessWidget {
       title: 'Endoorphin Trainer',
       themeMode: ThemeMode.dark,
       theme: AppThemes.appTheme,
-      initialRoute: RoutesName.splash,
+      initialRoute: RoutesName.home,
       // Initial route
       onGenerateRoute: Routes.generateRoute,
       builder: (context, child) {

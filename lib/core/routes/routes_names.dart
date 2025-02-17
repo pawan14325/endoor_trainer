@@ -29,6 +29,15 @@ class RoutesName {
   //bio routes name
   static const String bio = 'bio_screen';
 
+  //forgot password routes name
+  static const String forgotPassword = 'forgotPassword_screen';
+
+  //create new password routes name
+  static const String createNewPassword = 'createNewPassword_screen';
+
+  //bottom nav bar routes name
+  static const String bottomNavBar = 'bottomNavBar_screen';
+
 
 
 

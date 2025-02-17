@@ -2,6 +2,7 @@ import 'package:endo_trainer/core/common_components/app_background.dart';
 import 'package:endo_trainer/core/common_components/app_bar.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/core/common_components/primary_text_field.dart';
+import 'package:endo_trainer/generated/assets.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/app_colors.dart';
@@ -13,7 +14,7 @@ class BioView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: myAppBar(title: Text("Bio",style: Theme.of(context).textTheme.headlineSmall,), context: context),
+      appBar: myAppBar(title: Text("Bio"), context: context),
       body: AppBackground(
         child: Padding(
           padding:  EdgeInsets.only(left: AppSizes.screenWidth*0.05,right: AppSizes.screenWidth*0.05),
@@ -130,7 +131,7 @@ class BioView extends StatelessWidget {
                         .headlineSmall!
                         .copyWith(color: AppColors.primaryColor,fontSize: 18,
                         fontFamily: 'Montserrat'),
-                  ), onTap: (){}),
+                  ), onTap: ()=>showDialogBox(context)),
                 ),
                 SizedBox(height: AppSizes.screenHeight*0.05,)
             
@@ -139,6 +140,64 @@ class BioView extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+  showDialogBox(BuildContext context) {
+    showDialog(
+      // barrierDismissible: false,
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          backgroundColor: AppColors.primaryColor,
+          title: Column(
+            children: [
+              SizedBox(
+                height: AppSizes.screenHeight * 0.03,
+              ),
+              Image.asset(
+                Assets.imagesIcCookTick,
+                scale: 4,
+              ),
+              SizedBox(
+                height: AppSizes.screenHeight * 0.02,
+              ),
+            ],
+          ),
+          content: SizedBox(
+              width: AppSizes.screenWidth, // Set width as per your requirement
+              height: AppSizes.screenHeight * 0.07, // Set height as per your requirement
+              child: Text(
+                'Your onboarding process has been\nsuccessfully completed. You will be\nnotified for further action.',
+                style: Theme.of(context)
+                    .textTheme
+                    .labelMedium!
+                    .copyWith(color: AppColors.whiteColor),
+                textAlign: TextAlign.center,
+              )),
+          actions: [
+            Center(
+              child: PrimaryButton(
+                  height: AppSizes.screenHeight*0.04,
+                  width: AppSizes.screenWidth*0.44,
+                  backGroundColor: Colors.transparent,
+                  child: Text(
+                    "Sign In",
+                    style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        color: AppColors.secondaryColor,
+                        fontSize: 18,
+                        fontFamily: 'Montserrat'
+                    ),
+                  ),
+                  onTap: () {
+                    // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>home));
+                  }),
+            ),
+          ],
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10.0),
+          ),
+        );
+      },
     );
   }
 }
