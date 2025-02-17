@@ -1,0 +1,20 @@
+{
+  "buildFiles": [
+    "/Users/rowth/Desktop/Flutterdev/sdk/flutter/packages/flutter_tools/gradle/src/main/groovy/CMakeLists.txt"
+  ],
+  "cleanCommandsComponents": [
+    [
+      "/Users/rowth/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+      "-C",
+      "/Users/rowth/Documents/endoor_trainer/android/app/.cxx/Debug/235f6n5g/armeabi-v7a",
+      "clean"
+    ]
+  ],
+  "buildTargetsCommandComponents": [
+    "/Users/rowth/Library/Android/sdk/cmake/3.22.1/bin/ninja",
+    "-C",
+    "/Users/rowth/Documents/endoor_trainer/android/app/.cxx/Debug/235f6n5g/armeabi-v7a",
+    "{LIST_OF_TARGETS_TO_BUILD}"
+  ],
+  "libraries": {}
+}
