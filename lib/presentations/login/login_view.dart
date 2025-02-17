@@ -10,8 +10,8 @@ import '../../core/app_colors.dart';
 import '../../core/common_components/primary_button.dart';
 
 class LoginView extends StatelessWidget {
-  const LoginView({super.key});
-
+    LoginView({super.key});
+  final _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
     return Scaffold(

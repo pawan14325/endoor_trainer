@@ -1,6 +1,7 @@
 import 'package:dio/dio.dart';
 
  import '../../../core/app_logger.dart';
+import '../../local_services/local_storage.dart';
 import 'dio_interceptor.dart';
 
 class DioClient {
@@ -10,7 +11,7 @@ class DioClient {
       : _dio = Dio(
           BaseOptions(
               headers: {
-                // 'Authorization': 'Bearer ${ LocalStorage().readValue('token')}',
+                'Authorization': 'Bearer ${ LocalStorage().readValue('token')}',
                 'Content-Type': 'application/json; charset=UTF-8'
               },
               responseType: ResponseType.json,
