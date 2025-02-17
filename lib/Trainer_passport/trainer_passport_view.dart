@@ -20,7 +20,6 @@ class TrainerPassportView extends StatelessWidget {
             },
             child: Text(
                   "passport",
-              style: Theme.of(context).textTheme.headlineSmall,
             ),
           ),
           context: context),

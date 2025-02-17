@@ -4,6 +4,14 @@ class Assets {
 
   static const String imagesBackground = 'assets/images/background.png';
   static const String imagesIcCookTick = 'assets/images/ic_cook_tick.png';
+  static const String imagesIcEarningBottomNavBar = 'assets/images/ic_earning_bottomNavBar.png';
+  static const String imagesIcHistoryBottomNavBar = 'assets/images/ic_history_bottomNavBar.png';
+  static const String imagesIcHomeBottomNavBar = 'assets/images/ic_home_bottomNavBar.png';
+  static const String imagesIcLockForgotPassword = 'assets/images/ic_lock_forgot_password.png';
+  static const String imagesIcNewlockCreatePassword = 'assets/images/ic_newlock_create_password.png';
+  static const String imagesIcProfileBottomNavBar = 'assets/images/ic_profile_bottomNavBar.png';
+  static const String imagesIcTickCreatePassword = 'assets/images/ic_tick_create_password.png';
+  static const String imagesLoginBackground = 'assets/images/login_background.png';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesOnboarding = 'assets/images/onboarding.png';
   static const String imagesOnboardingLogo = 'assets/images/onboarding_logo.png';
