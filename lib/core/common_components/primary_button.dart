@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
  import '../app_colors.dart';
+import '../app_sizes.dart';
 
 class PrimaryButton extends StatelessWidget {
   final Widget child;
@@ -26,8 +27,8 @@ class PrimaryButton extends StatelessWidget {
         onTap();
       },
       child: Container(
-        height: height ,  // Use the height value or the default
-        width: width , //Use the width value or the default
+        height: height?? AppSizes.screenHeight*0.05,  // Use the height value or the default
+        width: width??AppSizes.screenWidth*0.7, //Use the width value or the default
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(30),
           color: backGroundColor?? AppColors.secondaryColor,

@@ -1,11 +1,11 @@
 import 'package:endo_trainer/core/app_sizes.dart';
 import 'package:endo_trainer/core/common_components/app_background.dart';
 import 'package:endo_trainer/core/common_components/primary_text_field.dart';
-import 'package:endo_trainer/presentations/bio/bio_view.dart';
+import 'package:endo_trainer/presentations/signup/bio_view.dart';
 import 'package:flutter/material.dart';
 
-import '../core/app_colors.dart';
-import '../core/common_components/app_bar.dart';
+import '../../core/app_colors.dart';
+import '../../core/common_components/app_bar.dart';
 
 class TrainerPassportView extends StatelessWidget {
   const TrainerPassportView({super.key});

@@ -3,7 +3,7 @@ import 'package:endo_trainer/core/common_components/app_background.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/core/common_components/primary_text_field.dart';
 import 'package:endo_trainer/generated/assets.dart';
-import 'package:endo_trainer/presentations/Trainer_document_option/trainer_document_option_view.dart';
+import 'package:endo_trainer/presentations/signup/trainer_document_option_view.dart';
 import 'package:endo_trainer/presentations/onboarding/onboarding_view.dart';
 import 'package:flutter/material.dart';
 

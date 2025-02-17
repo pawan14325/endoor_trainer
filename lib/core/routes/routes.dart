@@ -1,19 +1,23 @@
 
  import 'package:endo_trainer/core/routes/routes_names.dart';
-import 'package:endo_trainer/presentations/Trainer_document_option/trainer_document_option_view.dart';
-import 'package:endo_trainer/presentations/bio/bio_view.dart';
+import 'package:endo_trainer/presentations/profile/account_view.dart';
+import 'package:endo_trainer/presentations/profile/bio_edit_view.dart';
+import 'package:endo_trainer/presentations/profile/profile_view.dart';
+import 'package:endo_trainer/presentations/profile/support_view.dart';
+import 'package:endo_trainer/presentations/signup/trainer_document_option_view.dart';
+import 'package:endo_trainer/presentations/signup/bio_view.dart';
 import 'package:endo_trainer/presentations/bottom_nav_bar/bottom_nav_bar_view.dart';
-import 'package:endo_trainer/presentations/country_code/country_code_view.dart';
-import 'package:endo_trainer/presentations/create_new_password/create_new_passsword_view.dart';
+import 'package:endo_trainer/presentations/signup/country_code_view.dart';
+import 'package:endo_trainer/presentations/forgot_password/create_new_passsword_view.dart';
 import 'package:endo_trainer/presentations/forgot_password/forgot_password_view.dart';
 import 'package:endo_trainer/presentations/home/home_view.dart';
 import 'package:endo_trainer/presentations/login/login_view.dart';
 import 'package:endo_trainer/presentations/onboarding/onboarding_view.dart';
-import 'package:endo_trainer/presentations/otp/otp_view.dart';
+import 'package:endo_trainer/presentations/signup/otp_view.dart';
 import 'package:endo_trainer/presentations/signup/signup_view.dart';
 import 'package:flutter/material.dart';
 
-import '../../Trainer_passport/trainer_passport_view.dart';
+import '../../presentations/signup/trainer_passport_view.dart';
 import '../../presentations/splash/splash_view.dart';
 import '../app_colors.dart';
 
@@ -60,9 +64,18 @@ class Routes {
       case RoutesName.home:
         return MaterialPageRoute(
             builder: (BuildContext context) =>  HomeView());
-
-      // case RoutesName.login:
-      //   return MaterialPageRoute(builder: (BuildContext context) => const LoginSignupView());
+      case RoutesName.profile:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  ProfileView());
+      case RoutesName.account:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  AccountView());
+      case RoutesName.bioEdit:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  BioEditView());
+      case RoutesName.support:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  SupportView());
 
       default:
         return MaterialPageRoute(builder: (_) {

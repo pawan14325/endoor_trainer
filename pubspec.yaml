@@ -13,6 +13,28 @@ dependencies:
     sdk: flutter
 
   cupertino_icons: ^1.0.2
+<<<<<<< HEAD
+  flutter_bloc:
+  json_annotation:
+  dio:
+  flutter_secure_storage:
+  firebase_messaging:
+  firebase_core:
+  firebase_crashlytics:
+  firebase_analytics:
+  flutter_local_notifications:
+  logger:
+  socket_io_client:
+  permission_handler:
+  file_picker:
+  image_picker:
+  get_storage:
+  country_code_picker:
+  pin_code_fields:
+  curved_labeled_navigation_bar:
+  flutter_page_view_indicator:
+
+=======
   flutter_bloc: ^8.1.3
   json_annotation: ^4.9.0
   dio: ^5.4.0
@@ -31,6 +53,7 @@ dependencies:
   country_code_picker: ^3.0.0
   pin_code_fields: ^8.0.1
   curved_labeled_navigation_bar: ^2.0.0
+>>>>>>> 3215c5163b697e40643c00311afe0e19e7b2fa4c
 dev_dependencies:
   flutter_test:
     sdk: flutter
