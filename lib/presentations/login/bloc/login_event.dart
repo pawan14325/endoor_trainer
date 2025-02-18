@@ -4,8 +4,19 @@ part of 'login_bloc.dart';
 abstract class LoginEvent {}
 
 class LoginSubmitted extends LoginEvent {
-  final String email;
+  final String phone;
   final String password;
+  final BuildContext context; // Add context here
 
-  LoginSubmitted({required this.email, required this.password});
+  LoginSubmitted({
+    required this.phone,
+    required this.password,
+    required this.context,
+  });
+}
+class CountryCodeEvent extends LoginEvent {
+  final String initialCountry;
+
+
+  CountryCodeEvent({required this.initialCountry});
 }

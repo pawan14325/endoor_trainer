@@ -60,7 +60,7 @@ class DioClient {
       );
       return response;
     } catch (e) {
-      CustomLogger.logMessage(
+      logMessage(
           msg: "LOG FROM DIO CLIENT ${e}", level: LogLevel.error);
       rethrow;
     }

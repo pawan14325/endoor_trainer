@@ -51,7 +51,9 @@ class CreateNewPassswordView extends StatelessWidget {
               SizedBox(
                 height: AppSizes.screenHeight * 0.01,
               ),
-              PrimaryTextField(hintText: "Enter New password"),
+              PrimaryTextField(
+
+                  hintText: "Enter New password"),
               SizedBox(
                 height: AppSizes.screenHeight * 0.01,
               ),

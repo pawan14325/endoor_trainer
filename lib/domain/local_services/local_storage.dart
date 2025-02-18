@@ -8,12 +8,12 @@ class LocalStorage {
 
   Future<bool> setValue(String key, String value) async {
     await storage.write(key: key, value: value);
-    CustomLogger.logMessage(msg: "TOKEN SAVED", level: LogLevel.info);
+    logMessage(msg: "TOKEN SAVED", level: LogLevel.info);
     return true;
   }
 
   Future<String?> readValue(String key) async {
-    CustomLogger.logMessage(msg: "TOKEN READ", level: LogLevel.info);
+    logMessage(msg: "TOKEN READ", level: LogLevel.info);
 
     return await storage.read(key: key);
   }
