@@ -10,7 +10,9 @@ class Assets {
   static const String imagesIcHomeBottomNavBar = 'assets/images/ic_home_bottomNavBar.png';
   static const String imagesIcLockForgotPassword = 'assets/images/ic_lock_forgot_password.png';
   static const String imagesIcNewlockCreatePassword = 'assets/images/ic_newlock_create_password.png';
+  static const String imagesIcPrivacyPolicyDrawer = 'assets/images/ic_privacyPolicy_drawer.png';
   static const String imagesIcProfileBottomNavBar = 'assets/images/ic_profile_bottomNavBar.png';
+  static const String imagesIcTermConditionDrawer = 'assets/images/ic_termCondition_drawer.png';
   static const String imagesIcTickCreatePassword = 'assets/images/ic_tick_create_password.png';
   static const String imagesLoginBackground = 'assets/images/login_background.png';
   static const String imagesLogo = 'assets/images/logo.png';

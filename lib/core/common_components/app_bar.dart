@@ -1,4 +1,5 @@
 import 'package:endo_trainer/core/app_sizes.dart';
+import 'package:endo_trainer/presentations/home/notification_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -8,10 +9,11 @@ AppBar myAppBar({
   Color?backGroundColor,
   List<Widget>? action,
   required Widget title,
-  required BuildContext context,
+  required BuildContext context, bottom,
 
 }) {
   return AppBar(
+    bottom: bottom,
     toolbarHeight: 50,
     leadingWidth: AppSizes.screenWidth * 0.17,
     centerTitle: false,
@@ -74,7 +76,9 @@ AppBar homeAppBar({
       ),
 
       IconButton(
-        onPressed: () {},
+        onPressed: () {
+          Navigator.push(context,MaterialPageRoute(builder: (context)=>NotificationView()));
+        },
         icon: Icon(CupertinoIcons.bell),
       ),
     ],

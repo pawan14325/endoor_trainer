@@ -44,7 +44,7 @@ class TrainerDocumentOptionView extends StatelessWidget {
               height: 24,
               width: 44,
               decoration: BoxDecoration(
-                  color: AppColors.hintTextColor,
+                  color: AppColors.drawerBackground,
                   borderRadius: const BorderRadius.all(Radius.circular(24))),
               child: Text(
                 'Skip',
@@ -84,7 +84,7 @@ class TrainerDocumentOptionView extends StatelessWidget {
                 child: Container(
                   width: AppSizes.screenWidth,
                   decoration: BoxDecoration(
-                      color: AppColors.hintTextColor,
+                      color: AppColors.drawerBackground,
                       borderRadius: BorderRadius.circular(10)),
                   child: ListView.builder(
                     shrinkWrap: true,

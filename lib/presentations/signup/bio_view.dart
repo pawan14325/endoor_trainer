@@ -3,6 +3,7 @@ import 'package:endo_trainer/core/common_components/app_bar.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/core/common_components/primary_text_field.dart';
 import 'package:endo_trainer/generated/assets.dart';
+import 'package:endo_trainer/presentations/home/bottom_nav_bar_view.dart';
 import 'package:flutter/material.dart';
 
 import '../../core/app_colors.dart';
@@ -36,7 +37,7 @@ class BioView extends StatelessWidget {
                             right: 0,
                             child: CircleAvatar(
                               radius: 20,
-                              backgroundColor: AppColors.hintTextColor,
+                              backgroundColor: AppColors.drawerBackground,
                               child:Icon(Icons.camera_alt_outlined,size: 20,),
                             ),
                           )
@@ -156,7 +157,7 @@ class BioView extends StatelessWidget {
               ),
               Image.asset(
                 Assets.imagesIcCookTick,
-                scale: 4,
+                scale: 1.5,
               ),
               SizedBox(
                 height: AppSizes.screenHeight * 0.02,
@@ -164,8 +165,8 @@ class BioView extends StatelessWidget {
             ],
           ),
           content: SizedBox(
-              width: AppSizes.screenWidth, // Set width as per your requirement
-              height: AppSizes.screenHeight * 0.07, // Set height as per your requirement
+              width: AppSizes.screenWidth,
+              height: AppSizes.screenHeight * 0.07,
               child: Text(
                 'Your onboarding process has been\nsuccessfully completed. You will be\nnotified for further action.',
                 style: Theme.of(context)
@@ -189,7 +190,7 @@ class BioView extends StatelessWidget {
                     ),
                   ),
                   onTap: () {
-                    // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>home));
+                    Navigator.pushReplacement(context, MaterialPageRoute(builder: (context)=>BottomNavBarView()));
                   }),
             ),
           ],

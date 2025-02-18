@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 
 import '../../generated/assets.dart';
@@ -13,13 +12,13 @@ class AppBackground extends StatelessWidget {
     return Container(
      height: AppSizes.screenHeight,
       width: AppSizes.screenWidth,
-      child: child,
       decoration: BoxDecoration(
         image: DecorationImage(
           fit: BoxFit.cover,
           image:AssetImage(Assets.imagesBackground)
         )
       ),
+      child: child,
     );
   }
 }

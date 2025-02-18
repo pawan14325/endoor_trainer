@@ -1,0 +1,2 @@
+/Users/abhishekbalyani/AndroidStudioProjects/endoor_trainer/android/app/.cxx/Debug/3a6u15s2/x86/CMakeFiles/edit_cache.dir
+/Users/abhishekbalyani/AndroidStudioProjects/endoor_trainer/android/app/.cxx/Debug/3a6u15s2/x86/CMakeFiles/rebuild_cache.dir

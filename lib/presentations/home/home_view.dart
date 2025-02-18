@@ -57,7 +57,7 @@ class HomeView extends StatelessWidget {
                                 text: "Quick ",
                                 style: Theme.of(context)
                                     .textTheme
-                                    .headlineLarge
+                                    .headlineMedium
                                     ?.copyWith(color: AppColors.secondaryColor),
                                 children: [
                                   TextSpan(
@@ -79,7 +79,7 @@ class HomeView extends StatelessWidget {
                                       "last 3 days",
                                       style: Theme.of(context).textTheme.labelSmall!.copyWith(color: AppColors.secondaryColor),
                                     ),
-                                    Icon(Icons.arrow_drop_down)
+                                    Icon(Icons.arrow_drop_down,color: AppColors.hintTextColor,)
                                   ],
                                 ),
                               ),
@@ -110,7 +110,7 @@ class HomeView extends StatelessWidget {
                                 width: AppSizes.screenWidth * 0.42,
                                 decoration: BoxDecoration(
                                   borderRadius: BorderRadius.circular(20),
-                                  color: AppColors.hintTextColor,
+                                  color: AppColors.drawerBackground,
 
                                 ),
                                 child: Column(
