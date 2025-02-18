@@ -12,6 +12,8 @@ class PrimaryTextField extends StatelessWidget {
    final double? width,height;
    final BoxBorder? border;
    final Color? color;
+   final bool? enabled;
+   final TextStyle? style;
    PrimaryTextField({
      super.key,
      required this.hintText,
@@ -21,7 +23,9 @@ class PrimaryTextField extends StatelessWidget {
      this.width,
      this.height,
      this.border,
-     this.color
+     this.color,
+     this.enabled = true,
+     this.style,
    });
 
   @override
@@ -41,8 +45,9 @@ class PrimaryTextField extends StatelessWidget {
           //   LengthLimitingTextInputFormatter(64),
           //   FilteringTextInputFormatter.deny(RegExp(r'\s')),
           // ],
+            enabled: enabled,
           maxLength: maxLength,
-          style: Theme.of(context)
+          style:style?? Theme.of(context)
               .textTheme
               .labelMedium!
               .copyWith(color: AppColors.primaryColor),

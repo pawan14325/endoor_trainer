@@ -50,6 +50,30 @@ class RoutesName {
   //support routes name
   static const String support = 'support_screen';
 
+  //document routes name
+  static const String document = 'document_screen';
+
+  //rating routes name
+  static const String rating = 'rating_screen';
+
+  //earning routes name
+  static const String earning = 'earning_screen';
+
+  //withdraw routes name
+  static const String withdraw = 'withdraw_screen';
+
+  //bank details routes name
+  static const String bankDetails = 'bankDetails_screen';
+
+  //booking history routes name
+  static const String bookingHistory = 'bookingHistory_screen';
+
+  //booking details routes name
+  static const String bookingDetails = 'bookingDetails_screen';
+
+  //notification routes name
+  static const String notification = 'notification_screen';
+
 
 
 

@@ -3,7 +3,14 @@ import 'package:endo_trainer/core/common_components/app_background.dart';
 import 'package:endo_trainer/core/common_components/app_bar.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/generated/assets.dart';
+import 'package:endo_trainer/presentations/booking/booking_history_view.dart';
+import 'package:endo_trainer/presentations/earning/bank_details_view.dart';
+import 'package:endo_trainer/presentations/earning/earning_view.dart';
 import 'package:endo_trainer/presentations/profile/account_view.dart';
+import 'package:endo_trainer/presentations/profile/bio_edit_view.dart';
+import 'package:endo_trainer/presentations/profile/docuemnt_view.dart';
+import 'package:endo_trainer/presentations/profile/rating_view.dart';
+import 'package:endo_trainer/presentations/profile/support_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -99,7 +106,7 @@ class ProfileView extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(color: AppColors.greyColor),
-                        color: AppColors.hintTextColor),
+                        color: AppColors.drawerBackground),
                     child: InkWell(
                       onTap: () {
                         Navigator.push(context, MaterialPageRoute(builder: (context)=>AccountView()));
@@ -146,6 +153,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>DocumentView()));
                   },
                   child: Container(
                       height: AppSizes.screenHeight * 0.05,
@@ -153,7 +161,7 @@ class ProfileView extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           border: Border.all(color: AppColors.greyColor),
-                          color: AppColors.hintTextColor),
+                          color: AppColors.drawerBackground),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -192,6 +200,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=>BookingHistoryView()));
                   },
                   child: Container(
                       height: AppSizes.screenHeight * 0.05,
@@ -199,7 +208,7 @@ class ProfileView extends StatelessWidget {
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(5),
                           border: Border.all(color: AppColors.greyColor),
-                          color: AppColors.hintTextColor),
+                          color: AppColors.drawerBackground),
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
@@ -246,9 +255,10 @@ class ProfileView extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(color: AppColors.greyColor),
-                        color: AppColors.hintTextColor),
+                        color: AppColors.drawerBackground),
                     child: InkWell(
                       onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>SupportView()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -292,9 +302,10 @@ class ProfileView extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(color: AppColors.greyColor),
-                        color: AppColors.hintTextColor),
+                        color: AppColors.drawerBackground),
                     child: InkWell(
                       onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>EarningView()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -342,9 +353,10 @@ class ProfileView extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(color: AppColors.greyColor),
-                        color: AppColors.hintTextColor),
+                        color: AppColors.drawerBackground),
                     child: InkWell(
                       onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>BankDetailsView()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -375,7 +387,7 @@ class ProfileView extends StatelessWidget {
                               Icons.arrow_forward_ios,
                               color: AppColors.whiteColor,
                               size: 20,
-                                                     ),
+                             ),
                            )
                         ],
                       ),
@@ -389,9 +401,10 @@ class ProfileView extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(color: AppColors.greyColor),
-                        color: AppColors.hintTextColor),
+                        color: AppColors.drawerBackground),
                     child: InkWell(
                       onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>BioEditView()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -422,7 +435,7 @@ class ProfileView extends StatelessWidget {
                               Icons.arrow_forward_ios,
                               color: AppColors.whiteColor,
                               size: 20,
-                                                     ),
+                             ),
                            )
                         ],
                       ),
@@ -436,9 +449,10 @@ class ProfileView extends StatelessWidget {
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(5),
                         border: Border.all(color: AppColors.greyColor),
-                        color: AppColors.hintTextColor),
+                        color: AppColors.drawerBackground),
                     child: InkWell(
                       onTap: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=>RatingView()));
                       },
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,

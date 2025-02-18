@@ -112,7 +112,12 @@ class AccountView extends StatelessWidget {
                 SizedBox(
                   height: AppSizes.screenHeight * 0.011,
                 ),
-                PrimaryTextField(color: Colors.transparent,hintText: "Enter First Name"),
+                PrimaryTextField(
+                    style: Theme.of(context)
+                        .textTheme
+                        .labelMedium!
+                        .copyWith(color: AppColors.whiteColor),
+                    color: Colors.transparent,hintText: "Enter First Name"),
                 SizedBox(
                   height:AppSizes.screenHeight * 0.01,
                 ),
@@ -138,7 +143,11 @@ class AccountView extends StatelessWidget {
                 SizedBox(
                   height: AppSizes.screenHeight * 0.011,
                 ),
-                PrimaryTextField(color: Colors.transparent,hintText: "Enter Last Name"),
+                PrimaryTextField(
+                    style: Theme.of(context)
+                        .textTheme
+                        .labelMedium!
+                        .copyWith(color: AppColors.whiteColor),color: Colors.transparent,hintText: "Enter Last Name"),
                 SizedBox(
                   height:AppSizes.screenHeight * 0.01,
                 ),
@@ -164,7 +173,11 @@ class AccountView extends StatelessWidget {
                 SizedBox(
                   height: AppSizes.screenHeight * 0.011,
                 ),
-                PrimaryTextField(color: Colors.transparent,hintText: "Enter Email"),
+                PrimaryTextField(
+                    style: Theme.of(context)
+                        .textTheme
+                        .labelMedium!
+                        .copyWith(color: AppColors.whiteColor),color: Colors.transparent,hintText: "Enter Email"),
                 SizedBox(
                   height: AppSizes.screenHeight * 0.01,
                 ),
@@ -190,7 +203,11 @@ class AccountView extends StatelessWidget {
                 SizedBox(
                   height: AppSizes.screenHeight * 0.011,
                 ),
-                PrimaryTextField(color: Colors.transparent,hintText: "Enter Number"),
+                PrimaryTextField(
+                    style: Theme.of(context)
+                        .textTheme
+                        .labelMedium!
+                        .copyWith(color: AppColors.whiteColor),color: Colors.transparent,hintText: "Enter Number"),
                 SizedBox(
                   height: AppSizes.screenHeight * 0.01,
                 ),
@@ -229,7 +246,7 @@ class AccountView extends StatelessWidget {
                           children: [
                             Padding(
                               padding:
-                              EdgeInsets.only(left: AppSizes.screenWidth * 0.05),
+                              EdgeInsets.only(left: AppSizes.screenWidth * 0.012),
                               child: Text(
                                 "Select Gender",
                                 style:  TextStyle(
@@ -264,7 +281,12 @@ class AccountView extends StatelessWidget {
                 SizedBox(
                   height: AppSizes.screenHeight * 0.011,
                 ),
-                PrimaryTextField(color: Colors.transparent,hintText: "Write about yourself"),
+                PrimaryTextField(
+                    style: Theme.of(context)
+                        .textTheme
+                        .labelMedium!
+                        .copyWith(color: AppColors.whiteColor),
+                    color: Colors.transparent,hintText: "Write about yourself"),
                 SizedBox(
                   height: AppSizes.screenHeight * 0.04,
                 ),

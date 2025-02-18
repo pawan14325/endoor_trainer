@@ -31,7 +31,11 @@ class BioEditView extends StatelessWidget {
                           ],
                         ),
                       ),
-                      PrimaryTextField(color: Colors.transparent,hintText: "Enter Nick Name"),
+                      PrimaryTextField(
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium!
+                              .copyWith(color: AppColors.whiteColor),color: Colors.transparent,hintText: "Enter Nick Name"),
                       Padding(
                         padding:  EdgeInsets.only(top: 15,bottom: 8),
                         child: Row(
@@ -41,7 +45,11 @@ class BioEditView extends StatelessWidget {
                           ],
                         ),
                       ),
-                      PrimaryTextField(color: Colors.transparent,hintText: "Enter Years of Experience"),
+                      PrimaryTextField(
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium!
+                              .copyWith(color: AppColors.whiteColor),color: Colors.transparent,hintText: "Enter Years of Experience"),
                       Padding(
                         padding:  EdgeInsets.only(top: 15,bottom: 8),
                         child: Row(
@@ -52,7 +60,12 @@ class BioEditView extends StatelessWidget {
                           ],
                         ),
                       ),
-                      PrimaryTextField(color: Colors.transparent,hintText: "Enter Your Expertise"),
+                      PrimaryTextField(
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium!
+                              .copyWith(color: AppColors.whiteColor),
+                          color: Colors.transparent,hintText: "Enter Your Expertise"),
                       Padding(
                         padding:  EdgeInsets.only(top: 15,bottom: 8),
                         child: Row(
@@ -61,7 +74,11 @@ class BioEditView extends StatelessWidget {
                           ],
                         ),
                       ),
-                      PrimaryTextField(color: Colors.transparent,hintText: "Enter Fun Fact/Professional Anecdote"),
+                      PrimaryTextField(
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium!
+                              .copyWith(color: AppColors.whiteColor),color: Colors.transparent,hintText: "Enter Fun Fact/Professional Anecdote"),
                       Padding(
                         padding:  EdgeInsets.only(top: 15,bottom: 8),
                         child: Row(
@@ -70,7 +87,12 @@ class BioEditView extends StatelessWidget {
                           ],
                         ),
                       ),
-                      PrimaryTextField(color: Colors.transparent,hintText: "Enter Motivational Quote"),
+                      PrimaryTextField(
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium!
+                              .copyWith(color: AppColors.whiteColor),
+                          color: Colors.transparent,hintText: "Enter Motivational Quote"),
                       Padding(
                         padding:  EdgeInsets.only(top: 15,bottom: 8),
                         child: Row(
@@ -84,6 +106,10 @@ class BioEditView extends StatelessWidget {
                         ),
                       ),
                       PrimaryTextField(
+                          style: Theme.of(context)
+                              .textTheme
+                              .labelMedium!
+                              .copyWith(color: AppColors.whiteColor),
                           maxLength: 250,
                           color: Colors.transparent,
                           hintText: "Tell us something about yourself"),
