@@ -12,10 +12,9 @@ class WithdrawView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(title: Text("Withdraw"), context: context),
-      body: AppBackground(
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
           child: Column(
             children: [
               Padding(
@@ -307,7 +306,6 @@ class WithdrawView extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

@@ -10,10 +10,9 @@ class NotificationView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(title: Text("Notifications"), context: context),
-      body: AppBackground(
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only(left: AppSizes.screenWidth*0.05,right: AppSizes.screenWidth*0.05),
             child: Column(
@@ -29,8 +28,7 @@ class NotificationView extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }
 Widget buildNotificationList(BuildContext context) {

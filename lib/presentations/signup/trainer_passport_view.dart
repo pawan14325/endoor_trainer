@@ -12,18 +12,17 @@ class TrainerPassportView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(
           title: GestureDetector(
             onTap: () {
-             Navigator.pop(context);
+              Navigator.pop(context);
             },
             child: Text(
-                  "passport",
+              "passport",
             ),
           ),
           context: context),
-      body: AppBackground(
         child: Padding(
           padding:  EdgeInsets.only(left: AppSizes.screenWidth * 0.03,
               right: AppSizes.screenWidth * 0.03,
@@ -32,7 +31,7 @@ class TrainerPassportView extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Padding(
-                padding:  EdgeInsets.only(bottom: AppSizes.screenHeight * 0.035),
+                padding:  EdgeInsets.only(bottom: AppSizes.screenHeight * 0.02),
                 child: Text(
                   'The following information will be collected as a part of the onboarding process, so please ensure that you provide correct details.',
                   style: Theme.of(context)
@@ -46,32 +45,29 @@ class TrainerPassportView extends StatelessWidget {
                 width: AppSizes.screenWidth,
                 color: AppColors.greyColor,
               ),
-              Padding(
-                padding:  EdgeInsets.only(top:AppSizes.screenHeight * 0.02),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding:  EdgeInsets.only(bottom: AppSizes.screenHeight * .008, top: AppSizes.screenHeight * .04),
-                      child: Text(
-                        'Name on the Passport ',
-                        style: Theme.of(context)
-                            .textTheme
-                            .labelLarge!
-                            .copyWith(fontWeight: FontWeight.w500),
-                      ),
+              Row(
+                children: [
+                  Padding(
+                    padding:  EdgeInsets.only(bottom: AppSizes.screenHeight * .006, top: AppSizes.screenHeight * .04),
+                    child: Text(
+                      'Name on the Passport ',
+                      style: Theme.of(context)
+                          .textTheme
+                          .labelLarge!
+                          .copyWith(fontWeight: FontWeight.w500),
                     ),
-                    Padding(
-                      padding:  EdgeInsets.only(top: AppSizes.screenHeight * .03,),
-                      child: Text(
-                        "* ",
-                        style: Theme.of(context)
-                            .textTheme
-                            .labelLarge
-                            ?.copyWith(fontSize: 14, color: Colors.red),
-                      ),
+                  ),
+                  Padding(
+                    padding:  EdgeInsets.only(top: AppSizes.screenHeight * .03,),
+                    child: Text(
+                      "* ",
+                      style: Theme.of(context)
+                          .textTheme
+                          .labelLarge
+                          ?.copyWith(fontSize: 14, color: Colors.red),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
               PrimaryTextField(hintText: "Enter Passport Name"),
               SizedBox(
@@ -161,7 +157,6 @@ class TrainerPassportView extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

@@ -5,7 +5,6 @@ import 'package:endo_trainer/presentations/signup/signup_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
-
 import '../../core/app_colors.dart';
 
 class OtpView extends StatelessWidget {
@@ -13,8 +12,7 @@ class OtpView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: AppBackground(
+    return AppBackground(
         child: Padding(
           padding:  EdgeInsets.only(left: AppSizes.screenWidth*0.05,right: AppSizes.screenWidth*0.05),
           child: Column(
@@ -119,7 +117,6 @@ class OtpView extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }
