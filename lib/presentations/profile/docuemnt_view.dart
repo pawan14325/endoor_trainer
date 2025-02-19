@@ -7,13 +7,11 @@ class DocumentView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar:myAppBar(title: Text("Documents"), context: context),
-      body: AppBackground(
-        child: Column(
+      child: Column(
           children: [],
         ),
-      ),
-    );
+      );
   }
 }

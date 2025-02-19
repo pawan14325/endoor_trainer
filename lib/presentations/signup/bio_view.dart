@@ -14,10 +14,9 @@ class BioView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(title: Text("Bio"), context: context),
-      body: AppBackground(
-        child: Padding(
+      child: Padding(
           padding:  EdgeInsets.only(left: AppSizes.screenWidth*0.05,right: AppSizes.screenWidth*0.05),
           child: SingleChildScrollView(
             child: Column(
@@ -140,8 +139,7 @@ class BioView extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
   }
   showDialogBox(BuildContext context) {
     showDialog(

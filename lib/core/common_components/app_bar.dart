@@ -1,4 +1,5 @@
 import 'package:endo_trainer/core/app_sizes.dart';
+import 'package:endo_trainer/generated/assets.dart';
 import 'package:endo_trainer/presentations/home/notification_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -44,7 +45,7 @@ AppBar homeAppBar({
     surfaceTintColor: AppColors.primaryColor,
     iconTheme: const IconThemeData(color: AppColors.greyColor),
     title: Text(
-        'Offline',
+        'Online',
         style: Theme.of(context).textTheme.headlineSmall,
       ),
 
@@ -64,11 +65,13 @@ AppBar homeAppBar({
             Padding(
               padding:  EdgeInsets.only(left: 12),
               child: Switch(
+                inactiveThumbImage:  AssetImage(Assets.imagesIcTrainerNotification),
+                activeThumbImage:  AssetImage(Assets.imagesIcTrainerNotification),
                 activeTrackColor: AppColors.secondaryColor,
                 activeColor: Colors.yellow,
                 inactiveThumbColor: Colors.transparent,
                 inactiveTrackColor: Colors.black,
-                value: false, onChanged: (bool value) {},
+                value: true, onChanged: (bool value) {},
               ),
             ),
           ),

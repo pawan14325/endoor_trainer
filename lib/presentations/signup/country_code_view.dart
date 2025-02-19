@@ -7,8 +7,6 @@ import 'package:endo_trainer/generated/assets.dart';
 import 'package:endo_trainer/presentations/signup/otp_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-
 import '../../core/app_colors.dart';
 
 class CountryCode extends StatelessWidget {
@@ -17,8 +15,7 @@ class CountryCode extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: AppBackground(
+    return AppBackground(
           child: Stack(
             children: [
               Padding(
@@ -180,7 +177,6 @@ class CountryCode extends StatelessWidget {
               ),
             ],
           )
-      )
-    );
+      );
   }
 }

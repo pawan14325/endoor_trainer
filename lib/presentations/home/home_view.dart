@@ -13,10 +13,9 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: homeAppBar( context: context),
       drawer: MyDrawer(),
-      body: AppBackground(
         child: SingleChildScrollView(
           child: Column(
             children: [
@@ -128,8 +127,7 @@ class HomeView extends StatelessWidget {
                                       child: Text(
                                         overflow: TextOverflow.ellipsis,
                                         "50",
-                                        style: Theme.of(context).textTheme.headlineLarge?.copyWith(
-
+                                        style: Theme.of(context).textTheme.headlineMedium?.copyWith(
                                           color: AppColors.secondaryColor,
                                           fontWeight: FontWeight.w600,
                                         ),
@@ -163,7 +161,6 @@ class HomeView extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

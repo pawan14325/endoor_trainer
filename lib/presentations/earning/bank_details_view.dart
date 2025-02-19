@@ -4,7 +4,6 @@ import 'package:endo_trainer/core/common_components/app_bar.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/core/common_components/primary_text_field.dart';
 import 'package:flutter/material.dart';
-
 import '../../core/app_colors.dart';
 
 class BankDetailsView extends StatelessWidget {
@@ -12,10 +11,9 @@ class BankDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(title: Text("Banking Details"), context: context),
-      body: AppBackground(
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only(left: AppSizes.screenWidth * 0.05, right: AppSizes.screenWidth * 0.05),
             child: Column(
@@ -144,7 +142,7 @@ class BankDetailsView extends StatelessWidget {
                                   .copyWith(color: AppColors.whiteColor),
                               border: Border.all(color: Colors.transparent),
                               color: Colors.transparent,
-                              hintText: "ACCOUNT NAME(AS PER BANK DETAILS)"),
+                              hintText: "ACCOUNT NAME"),
                         ),
                         Container(
                           height: 1,
@@ -275,7 +273,6 @@ class BankDetailsView extends StatelessWidget {
             ),
           )
         ),
-      ),
-    );
+      );
   }
 }

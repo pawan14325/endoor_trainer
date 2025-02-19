@@ -10,9 +10,8 @@ class BookingDetailsView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: myAppBar(title: Text("Booking Details"), context: context),
-        body:AppBackground(
+    return AppBackground(
+          appBar: myAppBar(title: Text("Booking Details"), context: context),
           child: SingleChildScrollView(
             child: Padding(
               padding: EdgeInsets.only(left: AppSizes.screenWidth*0.06, right: AppSizes.screenWidth*0.06),
@@ -405,8 +404,7 @@ class BookingDetailsView extends StatelessWidget {
                 ],
               ),
             )
-          ),
-        )
+          )
     );
   }
 }

@@ -1,6 +1,7 @@
 import 'package:endo_trainer/core/app_sizes.dart';
 import 'package:endo_trainer/core/common_components/app_background.dart';
 import 'package:endo_trainer/core/common_components/app_bar.dart';
+import 'package:endo_trainer/presentations/booking/booking_details_view.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../../core/app_colors.dart';
@@ -31,13 +32,12 @@ class _BookingHistoryViewState extends State<BookingHistoryView>
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(
         title: const Text("Booking History"),
         context: context,
         bottom: myTabBar(tabController, context),
       ),
-      body: AppBackground(
         child: TabBarView(
           controller: tabController,
           children: [
@@ -47,8 +47,7 @@ class _BookingHistoryViewState extends State<BookingHistoryView>
             _buildSessionList("Cancelled Sessions"),
           ],
         ),
-      ),
-    );
+      );
   }
 
   Widget _buildSessionList(String title) {
@@ -76,42 +75,50 @@ class _BookingHistoryViewState extends State<BookingHistoryView>
                       Padding(
                         padding: const EdgeInsets.symmetric(
                             vertical: 15, horizontal: 18),
-                        child: Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          children: [
-                            Row(
+                        child: GestureDetector(
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context)=>BookingDetailsView()));
+                          },
+                          child: Container(
+                            color: Colors.transparent,
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
                               children: [
-                                const CircleAvatar(
-                                  radius: 25,
-                                  backgroundColor: AppColors.greyColor,
-                                ),
-                                const SizedBox(width: 15),
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                Row(
                                   children: [
-                                    SizedBox(
-                                      width: AppSizes.screenWidth * 0.6,
-                                      child: Text(
-                                        "Yoga session with Richard",
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .displayLarge,
-                                      ),
+                                    const CircleAvatar(
+                                      radius: 25,
+                                      backgroundColor: AppColors.greyColor,
                                     ),
-                                    const SizedBox(height: 10),
-                                    Text(
-                                      "21 Dec . 1.39 pm",
-                                      style: Theme.of(context)
-                                          .textTheme
-                                          .displayMedium,
+                                    const SizedBox(width: 15),
+                                    Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        SizedBox(
+                                          width: AppSizes.screenWidth * 0.6,
+                                          child: Text(
+                                            "Yoga session with Richard",
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .displayLarge,
+                                          ),
+                                        ),
+                                        const SizedBox(height: 10),
+                                        Text(
+                                          "21 Dec . 1.39 pm",
+                                          style: Theme.of(context)
+                                              .textTheme
+                                              .displayMedium,
+                                        ),
+                                      ],
                                     ),
                                   ],
                                 ),
+                                const Icon(CupertinoIcons.eye,
+                                    size: 20, color: AppColors.whiteColor),
                               ],
                             ),
-                            const Icon(CupertinoIcons.eye,
-                                size: 20, color: AppColors.whiteColor),
-                          ],
+                          ),
                         ),
                       ),
                       const Divider(color: AppColors.greyColor),

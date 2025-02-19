@@ -6,6 +6,7 @@ import 'package:endo_trainer/generated/assets.dart';
 import 'package:endo_trainer/presentations/booking/booking_history_view.dart';
 import 'package:endo_trainer/presentations/earning/bank_details_view.dart';
 import 'package:endo_trainer/presentations/earning/earning_view.dart';
+import 'package:endo_trainer/presentations/onboarding/onboarding_view.dart';
 import 'package:endo_trainer/presentations/profile/account_view.dart';
 import 'package:endo_trainer/presentations/profile/bio_edit_view.dart';
 import 'package:endo_trainer/presentations/profile/docuemnt_view.dart';
@@ -21,10 +22,9 @@ class ProfileView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(title: Text("Profile"), context: context),
-      body: AppBackground(
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only(left: AppSizes.screenWidth * 0.05, right: AppSizes.screenWidth * 0.05),
             child: Column(
@@ -500,12 +500,13 @@ class ProfileView extends StatelessWidget {
                       color: Colors.black,
                       fontSize: 18,
                       fontFamily: 'Montserrat'),
-                ), onTap: (){})
+                ), onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=>OnboardingView()));
+                })
               ],
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }

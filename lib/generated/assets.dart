@@ -14,6 +14,7 @@ class Assets {
   static const String imagesIcProfileBottomNavBar = 'assets/images/ic_profile_bottomNavBar.png';
   static const String imagesIcTermConditionDrawer = 'assets/images/ic_termCondition_drawer.png';
   static const String imagesIcTickCreatePassword = 'assets/images/ic_tick_create_password.png';
+  static const String imagesIcTrainerNotification = 'assets/images/ic_trainer_notification.png';
   static const String imagesLoginBackground = 'assets/images/login_background.png';
   static const String imagesLogo = 'assets/images/logo.png';
   static const String imagesOnboarding = 'assets/images/onboarding.png';

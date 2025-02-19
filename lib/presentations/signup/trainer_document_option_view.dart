@@ -17,7 +17,7 @@ class TrainerDocumentOptionView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: AppBar(
         toolbarHeight: 50,
         leadingWidth: AppSizes.screenWidth * 0.17,
@@ -59,7 +59,6 @@ class TrainerDocumentOptionView extends StatelessWidget {
           )
         ],
       ),
-      body: AppBackground(
         child: Padding(
           padding:  EdgeInsets.only(left: AppSizes.screenWidth*0.05,right: AppSizes.screenWidth*0.05),
           child: Column(
@@ -135,7 +134,6 @@ class TrainerDocumentOptionView extends StatelessWidget {
             ],
           ),
         ),
-      ),
-    );
+      );
   }
 }

@@ -12,10 +12,9 @@ class EarningView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return AppBackground(
       appBar: myAppBar(title: Text("My Earning"), context: context),
-      body: AppBackground(
-        child: SingleChildScrollView(
+      child: SingleChildScrollView(
           child: Padding(
             padding: EdgeInsets.only( left: AppSizes.screenWidth * 0.03,
               right: AppSizes.screenWidth * 0.03,
@@ -232,7 +231,6 @@ class EarningView extends StatelessWidget {
             ),
           ),
         ),
-      ),
-    );
+      );
   }
 }

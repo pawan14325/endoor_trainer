@@ -14,8 +14,7 @@ class SignupView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      resizeToAvoidBottomInset: true,
+    return AppBackground(
       appBar: AppBar(
         toolbarHeight: 50,
         leadingWidth: AppSizes.screenWidth * 0.14,
@@ -56,234 +55,180 @@ class SignupView extends StatelessWidget {
           ],
         ),
       ),
-      body: AppBackground(
         child: Padding(
           padding:  EdgeInsets.only(left: AppSizes.screenWidth*0.05,right: AppSizes.screenWidth*0.05),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              SizedBox(
-                height: AppSizes.screenHeight * 0.01,
-              ),
-              Text(
-                "Please enter your details to create an account.",
-                style: Theme.of(context).textTheme.displayLarge,
-              ),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding:  EdgeInsets.only(top: 15,bottom: 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          "First Name",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14),
-                        ),
-                        Text(
-                          " *",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14, color: Colors.red),
-                        )
-                      ],
-                    ),
-                  ),
-                  PrimaryTextField(
-                      width: AppSizes.screenWidth,
-                      hintText: "Enter First Name"),
-                  Padding(
-                    padding:  EdgeInsets.only(top: 15,bottom: 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Last Name",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14),
-                        ),
-                        Text(
-                          " *",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14, color: Colors.red),
-                        )
-                      ],
-                    ),
-                  ),
-                  PrimaryTextField(
-                      width: AppSizes.screenWidth,
-                      hintText: "Enter Last Name"),
-                  Padding(
-                    padding:  EdgeInsets.only(top: 15,bottom: 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Email",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14),
-                        ),
-                        Text(
-                          " *",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14, color: Colors.red),
-                        )
-                      ],
-                    ),
-                  ),
-                  PrimaryTextField(
-                      width: AppSizes.screenWidth,
-                      hintText: "Enter Your Email id"),
-                  Padding(
-                    padding:  EdgeInsets.only(top: 15,bottom: 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Password",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14),
-                        ),
-                        Text(
-                          " *",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14, color: Colors.red),
-                        )
-                      ],
-                    ),
-                  ),
-                  PrimaryTextField(
-                      width: AppSizes.screenWidth,
-                      hintText: "Enter Your Password"),
-                  Padding(
-                    padding:  EdgeInsets.only(top: 15,bottom: 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Confirm Password",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14),
-                        ),
-                        Text(
-                          " *",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14, color: Colors.red),
-                        )
-                      ],
-                    ),
-                  ),
-                  PrimaryTextField(
-                      width: AppSizes.screenWidth,
-                      hintText: "Enter Your Confirm Password"),
-                  Padding(
-                    padding:  EdgeInsets.only(top: 15,bottom: 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Gender",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14),
-                        ),
-                        Text(
-                          " *",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14, color: Colors.red),
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 45,
-                    width: AppSizes.screenWidth,
-                    decoration: BoxDecoration(
-                      color: Colors.white,
-                      border: Border.all(color: AppColors.greyColor),
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Padding(
-                          padding:
-                          EdgeInsets.only(left: AppSizes.screenWidth * 0.035,right:AppSizes.screenWidth * 0.035, ),
-                          child: Text(
-                             "Select Gender",
-                            style: TextStyle(
-                              color: AppColors.hintTextColor,
-                              fontSize: 12,
-                              fontFamily: 'Roboto',
-                              fontWeight: FontWeight.w400,
-                            ),
-                          ),
-                        ),
-                        Icon(
-                            Icons.keyboard_arrow_down,
-                            size: 32,
-                            color: AppColors.hintTextColor),
-                      ],
-                    ),
-                  ),
-                  Padding(
-                    padding:  EdgeInsets.only(top: 15,bottom: 8),
-                    child: Row(
-                      children: [
-                        Text(
-                          "Categories you want to provide coaching on",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14),
-                        ),
-                        Text(
-                          " *",
-                          style: Theme.of(context)
-                              .textTheme
-                              .labelLarge
-                              ?.copyWith(fontSize: 14, color: Colors.red),
-                        )
-                      ],
-                    ),
-                  ),
-                  Container(
-                    height: 45,
-                    decoration: BoxDecoration(
-                      color: AppColors.whiteColor,
-                      border: Border.all(
-                          color: Colors
-                              .transparent), // Example border styling
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    child: Padding(
-                      padding: const EdgeInsets.only(left: 15, right: 8),
+          child: SingleChildScrollView(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                SizedBox(
+                  height: AppSizes.screenHeight * 0.01,
+                ),
+                Text(
+                  "Please enter your details to create an account.",
+                  style: Theme.of(context).textTheme.displayLarge,
+                ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding:  EdgeInsets.only(top: 15,bottom: 8),
                       child: Row(
-                        mainAxisAlignment:
-                        MainAxisAlignment.spaceBetween,
                         children: [
-                          Expanded(
+                          Text(
+                            "First Name",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14),
+                          ),
+                          Text(
+                            " *",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14, color: Colors.red),
+                          )
+                        ],
+                      ),
+                    ),
+                    PrimaryTextField(
+                        width: AppSizes.screenWidth,
+                        hintText: "Enter First Name"),
+                    Padding(
+                      padding:  EdgeInsets.only(top: 15,bottom: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Last Name",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14),
+                          ),
+                          Text(
+                            " *",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14, color: Colors.red),
+                          )
+                        ],
+                      ),
+                    ),
+                    PrimaryTextField(
+                        width: AppSizes.screenWidth,
+                        hintText: "Enter Last Name"),
+                    Padding(
+                      padding:  EdgeInsets.only(top: 15,bottom: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Email",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14),
+                          ),
+                          Text(
+                            " *",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14, color: Colors.red),
+                          )
+                        ],
+                      ),
+                    ),
+                    PrimaryTextField(
+                        width: AppSizes.screenWidth,
+                        hintText: "Enter Your Email id"),
+                    Padding(
+                      padding:  EdgeInsets.only(top: 15,bottom: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Password",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14),
+                          ),
+                          Text(
+                            " *",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14, color: Colors.red),
+                          )
+                        ],
+                      ),
+                    ),
+                    PrimaryTextField(
+                        width: AppSizes.screenWidth,
+                        hintText: "Enter Your Password"),
+                    Padding(
+                      padding:  EdgeInsets.only(top: 15,bottom: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Confirm Password",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14),
+                          ),
+                          Text(
+                            " *",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14, color: Colors.red),
+                          )
+                        ],
+                      ),
+                    ),
+                    PrimaryTextField(
+                        width: AppSizes.screenWidth,
+                        hintText: "Enter Your Confirm Password"),
+                    Padding(
+                      padding:  EdgeInsets.only(top: 15,bottom: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Gender",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14),
+                          ),
+                          Text(
+                            " *",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14, color: Colors.red),
+                          )
+                        ],
+                      ),
+                    ),
+                    Container(
+                      height: 45,
+                      width: AppSizes.screenWidth,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        border: Border.all(color: AppColors.greyColor),
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          Padding(
+                            padding:
+                            EdgeInsets.only(left: AppSizes.screenWidth * 0.035,right:AppSizes.screenWidth * 0.035, ),
                             child: Text(
-                              "Select categories",
-                              style: const TextStyle(
+                               "Select Gender",
+                              style: TextStyle(
                                 color: AppColors.hintTextColor,
                                 fontSize: 12,
                                 fontFamily: 'Roboto',
@@ -292,42 +237,96 @@ class SignupView extends StatelessWidget {
                             ),
                           ),
                           Icon(
-                            Icons.keyboard_arrow_down,
-                            size: 32,
-                            color: AppColors.hintTextColor,
-                          ),
+                              Icons.keyboard_arrow_down,
+                              size: 32,
+                              color: AppColors.hintTextColor),
                         ],
                       ),
                     ),
-                  ),
-                  Padding(
-                    padding:  EdgeInsets.only(top: 30, bottom: 30),
-                    child: Center(
-                      child: PrimaryButton(
-                          height: AppSizes.screenHeight*0.05,
-                          width: AppSizes.screenWidth*0.7,
-                          child: Text(
-                        "Continue",
-                        style: Theme.of(context)
-                            .textTheme
-                            .headlineSmall
-                            ?.copyWith(
-                            color: AppColors.primaryColor,
-                            fontSize: 18,
-                            fontFamily: 'Montserrat'),
+                    Padding(
+                      padding:  EdgeInsets.only(top: 15,bottom: 8),
+                      child: Row(
+                        children: [
+                          Text(
+                            "Categories you want to provide coaching on",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14),
+                          ),
+                          Text(
+                            " *",
+                            style: Theme.of(context)
+                                .textTheme
+                                .labelLarge
+                                ?.copyWith(fontSize: 14, color: Colors.red),
+                          )
+                        ],
                       ),
-                          onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context)=>TrainerDocumentOptionView()));
-        
-                          }),
                     ),
-                  )
-                ],
-              )
-            ],
+                    Container(
+                      height: 45,
+                      decoration: BoxDecoration(
+                        color: AppColors.whiteColor,
+                        border: Border.all(
+                            color: Colors
+                                .transparent), // Example border styling
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 15, right: 8),
+                        child: Row(
+                          mainAxisAlignment:
+                          MainAxisAlignment.spaceBetween,
+                          children: [
+                            Expanded(
+                              child: Text(
+                                "Select categories",
+                                style: const TextStyle(
+                                  color: AppColors.hintTextColor,
+                                  fontSize: 12,
+                                  fontFamily: 'Roboto',
+                                  fontWeight: FontWeight.w400,
+                                ),
+                              ),
+                            ),
+                            Icon(
+                              Icons.keyboard_arrow_down,
+                              size: 32,
+                              color: AppColors.hintTextColor,
+                            ),
+                          ],
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding:  EdgeInsets.only(top: 30, bottom: 30),
+                      child: Center(
+                        child: PrimaryButton(
+                            height: AppSizes.screenHeight*0.05,
+                            width: AppSizes.screenWidth*0.7,
+                            child: Text(
+                          "Continue",
+                          style: Theme.of(context)
+                              .textTheme
+                              .headlineSmall
+                              ?.copyWith(
+                              color: AppColors.primaryColor,
+                              fontSize: 18,
+                              fontFamily: 'Montserrat'),
+                        ),
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context)=>TrainerDocumentOptionView()));
+                    
+                            }),
+                      ),
+                    )
+                  ],
+                )
+              ],
+            ),
           ),
         ),
-      ),
     );
   }
 }
