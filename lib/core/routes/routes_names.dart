@@ -71,6 +71,21 @@ class RoutesName {
   //booking details routes name
   static const String bookingDetails = 'bookingDetails_screen';
 
+  //booking request routes name
+  static const String bookingRequest = 'bookingRequest_screen';
+
+  //session running routes name
+  static const String sessionRunning = 'sessionRunning_screen';
+
+  //session complete routes name
+  static const String sessionComplete = 'sessionComplete_screen';
+
+  //session details routes name
+  static const String sessionDetails = 'sessionDetails_screen';
+
+  //review rating routes name
+  static const String reviewRating = 'reviewRating_screen';
+
   //notification routes name
   static const String notification = 'notification_screen';
 

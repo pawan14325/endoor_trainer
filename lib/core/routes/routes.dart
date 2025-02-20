@@ -2,6 +2,11 @@
  import 'package:endo_trainer/core/routes/routes_names.dart';
 import 'package:endo_trainer/presentations/booking/booking_details_view.dart';
 import 'package:endo_trainer/presentations/booking/booking_history_view.dart';
+import 'package:endo_trainer/presentations/booking/booking_request_view.dart';
+import 'package:endo_trainer/presentations/booking/review_rating_view.dart';
+import 'package:endo_trainer/presentations/booking/session_complete_view.dart';
+import 'package:endo_trainer/presentations/booking/session_detail_view.dart';
+import 'package:endo_trainer/presentations/booking/session_running_view.dart';
 import 'package:endo_trainer/presentations/earning/bank_details_view.dart';
 import 'package:endo_trainer/presentations/earning/earning_view.dart';
 import 'package:endo_trainer/presentations/earning/withdraw_view.dart';
@@ -126,6 +131,18 @@ class Routes {
       case RoutesName.bookingDetails:
         return MaterialPageRoute(
             builder: (BuildContext context) =>  BookingDetailsView());
+      case RoutesName.bookingRequest:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  BookingRequestView());
+      case RoutesName.sessionRunning:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  SessionRunningView());
+      case RoutesName.sessionComplete:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  SessionCompleteView());
+      case RoutesName.reviewRating:
+        return MaterialPageRoute(
+            builder: (BuildContext context) =>  ReviewRatingView());
 
         // Other -----------------------------------------------------------------
       default:
