@@ -33,6 +33,9 @@ dependencies:
   curved_labeled_navigation_bar:
   flutter_page_view_indicator:
   flutter_rating_bar:
+  google_maps_flutter:
+  geolocator:
+  sliding_up_panel:
 dev_dependencies:
   flutter_test:
     sdk: flutter
