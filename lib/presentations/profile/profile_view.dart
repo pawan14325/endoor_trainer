@@ -4,6 +4,7 @@ import 'package:endo_trainer/core/common_components/app_bar.dart';
 import 'package:endo_trainer/core/common_components/primary_button.dart';
 import 'package:endo_trainer/generated/assets.dart';
 import 'package:endo_trainer/presentations/booking/booking_history_view.dart';
+import 'package:endo_trainer/presentations/booking/session_running_view.dart';
 import 'package:endo_trainer/presentations/earning/bank_details_view.dart';
 import 'package:endo_trainer/presentations/earning/earning_view.dart';
 import 'package:endo_trainer/presentations/onboarding/onboarding_view.dart';
@@ -200,7 +201,7 @@ class ProfileView extends StatelessWidget {
                 ),
                 InkWell(
                   onTap: () {
-                    Navigator.push(context,MaterialPageRoute(builder: (context)=>BookingHistoryView()));
+                    Navigator.push(context,MaterialPageRoute(builder: (context)=>SessionRunningView()));
                   },
                   child: Container(
                       height: AppSizes.screenHeight * 0.05,
