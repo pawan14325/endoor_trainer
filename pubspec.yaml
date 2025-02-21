@@ -35,6 +35,7 @@ dependencies:
   flutter_rating_bar:
   google_maps_flutter:
   geolocator:
+  location:
   sliding_up_panel:
 dev_dependencies:
   flutter_test:

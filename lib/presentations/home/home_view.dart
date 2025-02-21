@@ -66,7 +66,8 @@ class HomeView extends StatelessWidget {
                                 ])),
                         Container(
                                 height: AppSizes.screenHeight * 0.035,
-                                width: AppSizes.screenWidth * 0.19,
+                                width: AppSizes.screenWidth * 0.23,
+                                alignment: Alignment.center,
                                 decoration: BoxDecoration(
                                   border: Border.all(color: AppColors.secondaryColor),
                                   borderRadius: BorderRadius.circular(5),
@@ -76,6 +77,7 @@ class HomeView extends StatelessWidget {
                                   children: [
                                     Text(
                                       "last 3 days",
+                                      overflow: TextOverflow.ellipsis,
                                       style: Theme.of(context).textTheme.labelSmall!.copyWith(color: AppColors.secondaryColor),
                                     ),
                                     Icon(Icons.arrow_drop_down,color: AppColors.hintTextColor,)
